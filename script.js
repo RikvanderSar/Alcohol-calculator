@@ -23,7 +23,7 @@ const sliders = document.querySelectorAll('.slidecontainer__slider');
 const sliderUnitsAmount = document.querySelectorAll('.slider__units--amount');
 
 for (let i = 0; i < 4; i++){
-    sliders[i].addEventListener('click', function(){
+    sliders[i].addEventListener('change', function(){
         let somCost = 0;
         let somCalories = 0;
 
