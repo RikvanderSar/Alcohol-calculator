@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 500px;
+    width: 90%;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+/* Sliders */
+
+.slider__units {
+    text-align: right;
+}
+
+.slidecontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.slidecontainer__slider {
+    width: 90%;
+}
+
+.fas {
+    font-size: 30px;
+}
+
+/* Calculating savings */
+
+.result {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
