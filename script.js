@@ -29,15 +29,15 @@ for (let i = 0; i < 4; i++){
 
         sliderUnitsAmount[i].innerHTML = sliders[i].value;
 
-        somCost += sliders[0].value * beerPrice;
-        somCost += sliders[1].value * winePrice;
-        somCost += sliders[2].value * bottlePrice;
-        somCost += sliders[3].value * mixersPrice;
+        somCost += Math.round(sliders[0].value * beerPrice * weeksPerMonth);
+        somCost += Math.round(sliders[1].value * winePrice * weeksPerMonth);
+        somCost += Math.round(sliders[2].value * bottlePrice * weeksPerMonth);
+        somCost += Math.round(sliders[3].value * mixersPrice * weeksPerMonth);
 
-        somCalories += sliders[0].value * beerCalories;
-        somCalories += sliders[1].value * wineCalories;
-        somCalories += sliders[2].value * bottleCalories;
-        somCalories += sliders[3].value * mixersCalories;
+        somCalories += Math.round(sliders[0].value * beerCalories * weeksPerMonth);
+        somCalories += Math.round(sliders[1].value * wineCalories * weeksPerMonth);
+        somCalories += Math.round(sliders[2].value * bottleCalories * weeksPerMonth);
+        somCalories += Math.round(sliders[3].value * mixersCalories * weeksPerMonth);
 
         costSavings.innerHTML = somCost;
         calorieSavings.innerHTML = somCalories;
