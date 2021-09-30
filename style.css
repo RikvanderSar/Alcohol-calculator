@@ -3,17 +3,26 @@
 }
 
 body {
+    height: 100vh;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(https://dance4life.nl/wp-content/uploads/2021/05/Dance4life_Schaamteloos_doorArnoStevens-12.jpg) no-repeat center;
+    background-size: cover;
 }
 
 .card {
     max-width: 500px;
-    width: 90%;
-    padding: 1em;
-    border: 1px solid black;
+    width: 95%;
+    padding: 2em;
+    background: white;
+    opacity: 0.90;
+}
+
+h1, h2, h3 {
+    text-align: center;
 }
 
 /* Sliders */
@@ -28,17 +37,71 @@ body {
 }
 
 .slidecontainer__slider {
-    width: 90%;
+    width: 85%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 12px;
+    background: #d3d3d3;
+    outline: red;
+    border-radius: 10px;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
 }
+
+.slidecontainer__slider:hover {
+    opacity: 1;
+}
+
+.slidecontainer__slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: hsl(0,73%,48%);
+    cursor: pointer;
+}
+  
+.slidecontainer__slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: hsl(0,73%,48%);
+    cursor: pointer;
+}
+
 
 .fas {
     font-size: 30px;
 }
 
-/* Calculating savings */
+/*  savings */
 
 .result {
     display: flex;
     justify-content: space-around;
     text-align: center;
+}
+
+.fa-euro-sign,
+.fa-hamburger {
+    color: hsl(0,73%,48%);
+}
+
+/* CTA */
+button {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 0.5em 1em;
+    background: hsl(0,73%,48%);
+    color: white;
+    border:none;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background: hsl(0, 0%, 0%);
 }
