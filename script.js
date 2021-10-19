@@ -11,10 +11,10 @@ const beerCalories = 135;
 const winePrice = 3;
 const wineCalories = 106;
 
-const bottlePrice = 6;
+const bottlePrice = 10;
 const bottleCalories = wineCalories * 6;
 
-const mixersPrice = 5;
+const mixersPrice = 8;
 const mixersCalories = 135;
 
 
@@ -22,8 +22,9 @@ const mixersCalories = 135;
 const sliders = document.querySelectorAll('.slidecontainer__slider');
 const sliderUnitsAmount = document.querySelectorAll('.slider__units--amount');
 
+
 for (let i = 0; i < 4; i++){
-    sliders[i].addEventListener('change', function(){
+    sliders[i].addEventListener('mousemove', function(){
         let somCost = 0;
         let somCalories = 0;
 
